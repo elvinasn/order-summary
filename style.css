@@ -109,7 +109,7 @@ div{
 .white{
 	color: white;
 }
-@media (max-width: 500px){
+@media (max-width: 720px){
 	body{
 		background-image: url(images/pattern-background-mobile.svg);
 	}
