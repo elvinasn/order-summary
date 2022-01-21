@@ -1,7 +1,7 @@
 body{
 	background-image: url(images/pattern-background-desktop.svg);
 	background-color: hsl(225, 100%, 94%);
-	background-size: 100%;
+	background-size: 100% auto;
 	background-repeat: no-repeat;
 	display:flex;
 	justify-content: center;
@@ -20,6 +20,60 @@ body{
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: 1.5em;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card__hero-img{
+	width: 100%;
+	max-width: 350px;
+	height: auto;
+	border-radius: 25px 25px 0px 0px;
+}
+.card__plan{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: hsl(225, 100%, 98%);
+	height: 5em;
+	width: 100%;
+	max-width: 280px;
+	border-radius: 15px;
+}
+.card__block{
+	width: 100%;
+	max-width: 280px;
+	border-radius: 15px;
+}
+.card__plan-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap:1em;
+}
+.card__blue-background{
+	background-color: hsl(245, 75%, 52%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	height:3em;
+	box-shadow: 0em 0.5em 0.4em 0.5em hsl(225, 100%, 98%) ;
+}
+.card__blue-background:hover, .plan__change:hover{
+	transition: 0.3s ease;
+	opacity: 0.7;
+	text-decoration: none;
+}
+.plan__change:link, .plan__change:visited{
+	color:hsl(245, 75%, 52%);
+}
+.card__cancel:link, .card__cancel:visited{
+	color:inherit;
+	text-decoration: none;
+	font-weight: 700;
+}
+.card__cancel:hover{
+	transition: 0.3s ease;
+	color:hsl(223, 47%, 23%);
 }
 .centered{
 	text-align: center;
@@ -35,33 +89,6 @@ h1{
 	font-weight: 900;
 	color:hsl(223, 47%, 23%)
 }
-.hero-img{
-	width: 100%;
-	max-width: 350px;
-	height: auto;
-	border-radius: 25px 25px 0px 0px;
-}
-.plan-flex{
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: hsl(225, 100%, 98%);
-	height: 5em;
-	width: 100%;
-	max-width: 280px;
-	border-radius: 15px;
-}
-.divfix{
-	width: 100%;
-	max-width: 280px;
-	border-radius: 15px;
-}
-.flex{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap:1em;
-}
 p{
 	color:hsl(224, 23%, 55%);
 	font-weight: 400;
@@ -73,23 +100,17 @@ p{
 .right-margin{
 	margin-right: 1em;
 }
-.low-margin{
+.low-line{
 	line-height: 0.5em;
-}
-.blue-background{
-	background-color: hsl(245, 75%, 52%);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height:3em;
-	color: white;
-}
-a:link, a:visited{
-	color:hsl(245, 75%, 52%);
-}
-a div p{
-	text-decoration: none;
 }
 div{
 	margin: 1em 0;
+}
+.white{
+	color: white;
+}
+@media (max-width: 500px){
+	body{
+		background-image: url(images/pattern-background-mobile.svg);
+	}
 }

@@ -14,24 +14,26 @@
 </head>
 <body>
   <main class="card">
-    <img src="images/illustration-hero.svg" alt="hero" class="hero-img">
+    <img src="images/illustration-hero.svg" alt="hero" class="card__hero-img">
     <h1 class="centered bold">Order Summary</h1>
 
     <p class="centered">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-    <div class="plan-flex divfix">
-      <div class="flex">
+    <div class="card__plan card__block">
+      <div class="card__plan-flex">
         <img src="images/icon-music.svg" alt="music-icon" class="music-icon">
-        <div class="low-margin">
+        <div class="low-line">
           <p class="bold">Annual Plan</p>
           <p>$59.99/year</p>
       </div>
      </div>
-      <p class="right-margin"><a href="#">Change</a></p>
+      <p class="right-margin"><a href="#" class="plan__change">Change</a></p>
     </div>
-    <div class="blue-background divfix">
-      <p>Proceed to Payment</p>
-    </div>
-    <p>Cancel Order</p>
+    <a href="#" class="card__blue-background card__block">
+      <div>
+      <p class="white">Proceed to Payment</p>
+      </div>
+    </a>
+    <p><a href="#" class="card__cancel">Cancel Order</a></p>
   </main>
 </body>
 </html>
